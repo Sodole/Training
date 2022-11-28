@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'Dongle-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108_2@1.0/Dongle-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  font-family: 'Dongle-Regular';
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 18px;
+}
+
+body{
+  margin: 0; 
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app{
+  position: relative;
+  width: 320px;
+  height: 568px;
+  border-radius: 16px;
+  background-image: url(/todolist/image/waper.png);
+}
+.week{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin : 3px ;
+  padding-bottom : 3px;
+  border-bottom: 0.5px solid rgb(234, 234, 234);
+}
+
+button {
+  font-size: 24px;
+  margin: 0;
+  background-color: transparent;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+#reset{
+  position: absolute;
+  right : 10px;
+}
+.app  > h1{
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 3px;
+  margin-top : 30px;
+}
+
+ul{
+  max-height: 420px;
+  overflow: auto;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+ul > li{
+  cursor: pointer;
+  position: relative;
+  list-style-type: none;
+  width: 260px;
+  height: 40px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  /* border-radius: 8px; */
+  flex-direction: row;
+  display: flex;
+  padding-left: 10px;
+  border :0;
+  border-bottom: 3px solid lightgray;
+}
+/* 
+ul > li::after{
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  width: 0;
+  height: 0; 
+  border-bottom: 16px solid transparent;
+  border-left: 16px solid rgb(254, 229, 77);
+} */
+
+ul > li > span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px; 
+  height: 16px;
+  border-radius: 8px;
+  background-color: wheat;
+  position: absolute;
+  right: -20px;
+  bottom: 12px;
+}
+
+Ul > li > div{
+  position: absolute;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 16px;
+  height: 20px;
+  left: -15px;
+  bottom: 12px;
+  border-right: 3px solid gray;
+}
+
+
+form{
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+}
+input{
+  font-size: 1.4em;
+  margin: 0;
+  border: none;
+  height: 45px;
+}
+input[type="text"]{
+  width: 240px;
+  padding-left: 10px;
+}
+input[type="text"]:focus{
+  outline: gray ;
+}
+input[type="submit"]{
+  cursor: pointer;
+  width: 80px;
+  border-radius: 8px;
+  background-color: lightyellow;
+}
+
+.done{
+  color: rgb(93, 93, 93);
+  background-color: transparent;
+}
+
+.done::after{
+  border-left: 16px solid rgb(234, 234, 234);
+}
+

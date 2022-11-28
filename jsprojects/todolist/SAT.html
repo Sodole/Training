@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="app">
+      <button id="reset">reset</button>
+
+      <h1>TO DO LIST</h1>
+      <div class="week">
+      <a href="index.html"><button value="mon">MON</button></a>
+      <a href="TUE.html"><button value="tue">TUE</button></a>
+      <a href="WED.html"><button value="wed">WED</button></a>
+      <a href="THU.html"><button value="thu">THU</button></a>
+      <a href="FRI.html"><button value="fri">FRI</button></a>
+      <a href="SAT.html"><button value="sat">SAT</button></a>
+      <a href="SUN.html"><button value="sun">SUN</button></a>
+      </div>
+      <ul id="todo-list">
+      </ul>
+      <form id="todo-form">
+        <input name="todo" type="text" placeholder="TO DO..." maxlength="16" autocomplete="off"><input type="submit" value="추가">
+      </form>
+    </div>
+  </div>
+  <script src="scriptsat.js"></script>
+</body>
+</html>

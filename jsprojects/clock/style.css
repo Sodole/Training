@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'LAB디지털';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{ 
+  font-family: 'LAB디지털';
+  box-sizing: border-box;
+  font-size: 60px;
+
+}
+
+body{
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+}
+
+.clock{
+  color: rgb(12, 12, 12);
+  min-width: 480px;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+  border: 2px solid gray;
+  border-radius: 10px;
+  background-image: url("/images/wood.jpg");
+  box-shadow: 5px 5px 3px 5px darkgrey;
+}
+
+.today{
+  margin-bottom: 10px;
+}
+
+.time{
+  margin-top: 10px;
+}
+.box{
+  margin-top: 50px;
+  margin-bottom: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+.trans{
+  position: relative;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+}
+.alams{
+  position: relative;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+}
+
+
