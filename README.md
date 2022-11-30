@@ -1,5 +1,13 @@
 # 프로그래밍 공부
 
+### 잔디심기 안될때 해결방법
+ 1. 문제 찾기 : 문제는 local의 email.이 잘못되어 있었음...
+   git config --list로 등록되어 있는 정보 확인
+   git config --global(or local) user.email=이메일주소 로 변경시도
+   안되었음...
+   git config --show-origin user.email 을 하면 저장되어 있는 위치와 값을 알려줌
+   직접 파일을 가서 고침...ㅠㅠ 아니면 폴더로 접근해서 다시 local로 바꾸면 됨!!
+
 
 ### python 문법 공부<프로그래머스 lv0 100문제 풀기>
 
